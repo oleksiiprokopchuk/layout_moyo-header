@@ -1,5 +1,13 @@
+html {
+box-sizing: border-box;
+}
+
 body {
   margin: 0;
+}
+
+.header {
+width: 100%;
 }
 
 .container {
@@ -7,4 +15,26 @@ body {
   align-items: center;
   margin: 0 auto;
   justify-content: space-between;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+
+
+header > a {
+  margin-left: 41.5px;
+}
+
+a {
+  margin: 0 8.5px;
+}
+.first a {
+  margin-left: 0;
+}
+.last a {
+  margin-right: 0;
+}
+
+a.is-active::after {
+  bottom: -4px;
 }
