@@ -1,5 +1,6 @@
 html {
 box-sizing: border-box;
+font-family: Roboto, sans-serif;
 }
 
 *, *::before, *::after {
@@ -13,8 +14,8 @@ body {
 width: 100%;
 }
 
-.header:root {
---color-blue: #33ccff;
+:root {
+  --color-primary: #00acdc;
 }
 
 .container {
@@ -48,9 +49,24 @@ width: 100%;
   font-family: 'Roboto', sans-serif;
 }
 
+.nav__link:hover {
+  color: var(--color-primary);
+}
 .nav__link.is-active {
   position: relative;
+  color: var(--color-primary);
 }
+
+.nav__link.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-primary);
+ }
+
 .nav__item {
   margin-right: 19px;
 }
@@ -70,12 +86,3 @@ header > a {
 a {
   margin: 0 8.5px;
 }
-
-.nav__link.is-active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  height: 2px;
-  width: 100%;
-  background: var(--color-blue); }
