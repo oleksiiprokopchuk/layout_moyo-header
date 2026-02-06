@@ -3,6 +3,7 @@ box-sizing: border-box;
 }
 
 body {
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -19,7 +20,9 @@ width: 100%;
   padding: 0 20px;
 }
 
-
+nav {
+  text-align: center;
+}
 
 header > a {
   margin-left: 41.5px;
@@ -35,6 +38,11 @@ a {
   margin-right: 0;
 }
 
+a:hover{
+  color: #33ccff;
+}
+
 a.is-active::after {
   bottom: -4px;
+  position: relative;
 }
