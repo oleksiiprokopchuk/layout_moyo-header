@@ -2,13 +2,16 @@ html {
 box-sizing: border-box;
 }
 
+*, *::before, *::after {
+box-sizing: inherit; }
+
 body {
-  text-transform: uppercase;
   margin: 0;
 }
 
 .header {
 width: 100%;
+--color-blue;
 }
 
 .container {
@@ -20,8 +23,27 @@ width: 100%;
   padding: 0 20px;
 }
 
-nav {
+.nav {
   text-align: center;
+}
+
+.nav__link {
+ height: 50px;
+ padding: 0;
+ text-align: center;
+ text-transform: uppercase;
+}
+
+.nav__item {
+  margin-right: 19px;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__item:first-child {
+  margin-left: 0;
 }
 
 header > a {
@@ -30,16 +52,6 @@ header > a {
 
 a {
   margin: 0 8.5px;
-}
-.first a {
-  margin-left: 0;
-}
-.last a {
-  margin-right: 0;
-}
-
-a:hover{
-  color: #33ccff;
 }
 
 a.is-active::after {
