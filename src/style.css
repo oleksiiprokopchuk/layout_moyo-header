@@ -15,6 +15,7 @@ body {
 
 .header {
   width: 100%;
+  background-color: #fff;
 }
 
 :root {
@@ -73,6 +74,8 @@ body {
 
 .nav__item {
   margin-right: 19px;
+  list-style: none;
+  text-decoration: none;
 }
 
 .nav__item:last-child {
