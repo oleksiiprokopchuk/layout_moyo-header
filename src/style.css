@@ -1,5 +1,6 @@
 body {
   --header-height: 60px;
+
   margin: 0;
   font-family: Roboto, sans-serif;
   font-size: 12px;
@@ -27,7 +28,7 @@ a.is-active {
 
 ul {
   display: flex;
-  gap: 20px;
+  margin: 20px;
   margin: 0;
   padding: 0;
   list-style: none;
